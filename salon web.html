@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitZone Gym</title>
+  <style>
+    body {
+       /*background: url('c:\Users\Vivek Bojja\OneDrive\Desktop\skill craft\task2\blurred.webp') no-repeat center center/cover;*/
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1160f2;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      /* background: url('salon web.html') no-repeat center center/cover; */
+    }
+
+    header {
+      
+      color: white;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .button-container {
+      margin: 20px 0;
+    }
+
+    .nav-button {
+      background-color: rgba(255, 251, 0, 0.973);
+      border: none;
+      color: #333;
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #ffc107;
+    }
+
+    .section {
+      display: none;
+      padding: 30px 20px;
+      max-width: 700px;
+      margin: auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      .nav-button {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Gloss & Glow Salon</h1>
+    <p>Your journey to beauty starts here ✨</p>
+  </header>
+
+  <div class="button-container">
+    <button class="nav-button" onclick="showSection('home')">Home</button>
+    <button class="nav-button" onclick="showSection('about')">About</button>
+    <button class="nav-button" onclick="showSection('contact')">Contact</button>
+  </div>
+
+  <div id="home" class="section">
+    <h2>Home</h2>
+    <p>Welcome to Gloss & Glow Salon! We offer a range of beauty services, expert stylists, and a relaxing atmosphere to help you look and feel your best.</p>
+  </div>
+
+  <div id="about" class="section">
+    <h2>About Gloss & Glow</h2>
+    <p>Gloss & Glow is more than just a salon—it's a sanctuary. Our services include hair styling, skincare, makeup, and personalized beauty consultations. We believe in enhancing your natural beauty and boosting your confidence.</p>
+  </div>
+
+  <div id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>
+      📍 Address: 123 pragathinagar, Hyderabad<br />
+      📞 Phone: +91-9876543210<br />
+      📧 Email: glossandglow@gmail.com
+    </p>
+  </div>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
